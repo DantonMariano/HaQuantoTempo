@@ -67,8 +67,7 @@ export default function Home() {
         <div className='container'>
             <br /> <br />
             <div className="row">
-                <div className="col-3"></div>
-                <div className="col-6" align='center'>
+                <div className="col-12" align='center'>
                     <br />
                     <h1> À quanto tempo você existe? </h1>
                     <br />
@@ -121,7 +120,6 @@ export default function Home() {
                         </>
                     )}
                 </div>
-                <div className="col-3"></div>
             </div>
         </div>
     )
