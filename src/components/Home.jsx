@@ -17,17 +17,13 @@ export default function Home() {
     const [horas, setHoras] = useState(0)
     const [flag, setFlag] = useState(false)
 
-    const atualizaTempo = () => {
+    useEffect(()=>{
         setDias(calculaDias(value))
         setMeses(calculaMeses(value))
         setAnos(calculaAnos(value))
         setSegundos(calculaSegundos(value))
         setMinutos(calculaMinutos(value))
         setHoras(calculaHoras(value))
-    }
-
-    useEffect(()=>{
-        atualizaTempo()
     }, [value])
 
     const calculaSegundos = (nascimento) => {
